@@ -12,7 +12,7 @@ public class Deck {
 	}
 	
 	public Card drawCard() {
-		return cards.get(0);
+		return cards.remove(0);
 	}
 	
 	public void shuffleDeck() {
@@ -21,5 +21,45 @@ public class Deck {
 	
 	public int getNumOfCards() {
 		return cards.size();
+	}
+	
+	public void createStandardDeck(){
+		cards = new ArrayList<Card>();
+		for(int i = 1; i< 14;i++){
+			if(i == 1){
+				Card card = new Card(14,"DIAMONDS");
+				this.addCard(card);
+				continue;
+			}
+			Card card = new Card(i,"DIAMONDS");
+			this.addCard(card);
+		}
+		for(int i = 1; i< 14;i++){
+			if(i == 1){
+				Card card = new Card(14,"HEARTS");
+				this.addCard(card);
+				continue;
+			}
+			Card card = new Card(i,"HEARTS");
+			this.addCard(card);
+		}
+		for(int i = 1; i< 14;i++){
+			if(i == 1){
+				Card card = new Card(14,"CLUBS");
+				this.addCard(card);
+				continue;
+			}
+			Card card = new Card(i,"CLUBS");
+			this.addCard(card);
+		}
+		for(int i = 1; i< 14;i++){
+			if(i == 1){
+				Card card = new Card(14,"CLUBS");
+				this.addCard(card);
+				continue;
+			}
+			Card card = new Card(i,"SPADES");
+			this.addCard(card);
+		}
 	}
 }

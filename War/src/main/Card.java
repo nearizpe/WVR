@@ -1,13 +1,18 @@
 package main;
 
 public class Card {
-private String value;
+private int value;
 private String suit;
 
-public String getValue() {
+public Card(int value, String suit){
+	this.value = value;
+	this.suit = suit;
+}
+
+public int getValue() {
 	return value;
 }
-public void setValue(String value) {
+public void setValue(int value) {
 	this.value = value;
 }
 public String getSuit() {
