@@ -38,7 +38,6 @@ public abstract class War {
 	}
 	
 	protected void dealCards(){
-		deck.shuffleDeck();
 		while(haveEnoughCards()){
 			handOutCards();
 		}
@@ -67,6 +66,7 @@ public abstract class War {
 			return null;
 		}
 	}
+	
 	
 	protected Player determineRoundWinner(){
 		if(player1.getHand().getValue() == player2.getHand().getValue() ){
