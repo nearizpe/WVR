@@ -5,6 +5,8 @@ import main.Player;
 
 public class WarSeperatePointsPile extends War {
 
+	
+	
 	public WarSeperatePointsPile(Player player1, Player player2, Deck gameDeck) {
 		super(player1, player2, gameDeck);
 		// TODO Auto-generated constructor stub

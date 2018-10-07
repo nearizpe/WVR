@@ -55,6 +55,8 @@ public class Main {
 			System.out.println("Please pick an appropritae response");
 			return;
 		}
+		System.out.println("~~~~~~~~WAR~~~~~~~~~");
 		war.startGame();
+		scan.close();
 	}
 }

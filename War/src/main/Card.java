@@ -18,6 +18,19 @@ public void setValue(int value) {
 public String getSuit() {
 	return suit;
 }
+public String getName() {
+	if(value<11) {
+		return Integer.toString(value);
+	}else if(value == 11) {
+		return "J";
+	}else if(value == 12) {
+		return "Q";
+	}else if(value == 13) {
+		return "K";
+	}else {
+		return "A";
+	}
+}
 public void setSuit(String suit) {
 	this.suit = suit;
 }

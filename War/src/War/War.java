@@ -83,7 +83,10 @@ public abstract class War {
 	protected void endRound(Player winner){
 		if(winner == null){
 			System.out.println("War!");
+			if(gameNotOver()) {
+			placeHands();
 			playRound();
+			}
 			return;
 		}
 		System.out.println(winner.getName()+" wins the round");

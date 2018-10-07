@@ -31,9 +31,13 @@ public class Player {
 		myDeck.addCard(card);
 	}
 	
+	public void setDeck(Deck deck) {
+		this.myDeck = deck;
+	}
+	
 	public Card playCard() {
 		hand =  myDeck.drawCard();
-		System.out.println(name+ " plays "+ hand.getValue() +" of "+hand.getSuit() +" as up card");
+		System.out.println(name+ " plays "+ hand.getName() +" of "+hand.getSuit() +" as up card");
 		return hand;
 	}
 
